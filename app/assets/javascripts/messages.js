@@ -38,7 +38,7 @@ $(document).on('turbolinks:load', function() {
         alert('メッセージを入力して下さい');
       } else {
         $('#new_message')[0].reset();
-        $('.messages').append(buildHTML(message));
+        $('.chat-main').append(buildHTML(message));
         $('.messages').animate({
           scrollTop: $('.messages')[0].scrollHeight
         }, 200);
